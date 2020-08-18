@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button color="dark" (click)="doCriarPaciente()">
+        <ion-icon slot="icon-only" name="people-outline"></ion-icon>
+      </ion-button>
+      <ion-button color="dark" (click)="doListar()">
+        <ion-icon slot="icon-only" name="list-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<br/>
+<ion-content [fullscreen]="true">
+  <ion-item lines="none">
+    <ion-label><h1>Cadastro de Paciente</h1></ion-label>
+  </ion-item>
+<br/>
+      <ion-item lines="none">
+        <ion-button (click)="doCriarPaciente()" size="large" expand="full"  color="dark">Cadastrar</ion-button>
+      </ion-item>
+ 
+</ion-content>
